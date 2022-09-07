@@ -10,10 +10,61 @@
 </head>
 <body>
     <nav class="container">
-
+        <button class="high-scores">View High Scores</button>
+        <p class="timer">Time: <span id="timer-number">60</span></p>
     </nav>
     <main class="container">
-        
+        <section class="landing-page">
+            <h1 class="quiz-title">Coding Quiz Challenge</h1>
+            <p>
+                Try to get a high score on the quiz by correctly answering as many programming questions as possible within the 60 second time limit.<br/>Any incorrect guesses will take 10 seconds off your current remaining time.
+            </p>
+            <button class="startQuiz">
+                Start Quiz
+            </button>
+        </section>
+        <section class="quiz-page">
+            <h2 class="question">
+                Example Question
+            </h2>
+            <form id="answers" action="">
+                <button id="answer-1-button" class="answer-button">
+                   1: <span id="answer-1">Answer1</span>
+                </button>
+                <button id="answer-2-button"class="answer-button">
+                    2: <span id="answer-2">Answer2</span>
+                </button>
+                <button id="answer-3-button"class="answer-button">
+                    3: <span id="answer-3">Answer3</span>
+                </button>
+                <button id="answer-4-button" class="answer-button">
+                    4: <span id="answer-4">Answer4</span>
+                </button>
+            </form>
+            <section class="answer-result">
+                <hr class="text-secondary"/>
+                <p class="answer-correct text-success">Correct!</p>
+                <p class="answer-incorrect text-danger">Incorrect!</p>
+            </section>
+        </section>
+        <section class="quiz-finish-page">
+            <h2>Quiz Finished!</h2>
+            <p>
+              Final Score: <span id="score">0</span>
+            </p>
+            <input type="text" name="initials" id="initials-input"/>
+            <input type="submit" name="initials-submit" value="Submit" id="initials-submit"/>
+
+
+        </section>
+        <section class="high-score-page">
+            <h2>High Scores</h2>
+            <ul class="high-scores">
+                <li class="high-score">AGC: 25</li>
+            </ul>
+            <button>Go Back</button>
+            <button>Clear High Scores</button>
+        </section>
     </main>
     <footer class="container">
 
