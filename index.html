@@ -9,66 +9,92 @@
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    <nav class="container">
-        <button class="high-scores">View High Scores</button>
-        <p class="timer">Time: <span id="timer-number">60</span></p>
-    </nav>
-    <main class="container">
-        <section class="landing-page">
-            <h1 class="quiz-title">Coding Quiz Challenge</h1>
-            <p>
-                Try to get a high score on the quiz by correctly answering as many programming questions as possible within the 60 second time limit.<br/>Any incorrect guesses will take 10 seconds off your current remaining time.
-            </p>
-            <button class="startQuiz">
-                Start Quiz
-            </button>
-        </section>
-        <section class="quiz-page">
-            <h2 class="question">
-                Example Question
-            </h2>
-            <form id="answers" action="">
-                <button id="answer-1-button" class="answer-button">
-                   1: <span id="answer-1">Answer1</span>
-                </button>
-                <button id="answer-2-button"class="answer-button">
-                    2: <span id="answer-2">Answer2</span>
-                </button>
-                <button id="answer-3-button"class="answer-button">
-                    3: <span id="answer-3">Answer3</span>
-                </button>
-                <button id="answer-4-button" class="answer-button">
-                    4: <span id="answer-4">Answer4</span>
-                </button>
-            </form>
-            <section class="answer-result">
-                <hr class="text-secondary"/>
-                <p class="answer-correct text-success">Correct!</p>
-                <p class="answer-incorrect text-danger">Incorrect!</p>
+    <section class="container top-bar">
+        <section class="row">
+            <section class="col">
+                <button class="btn high-scores-btn">View High Scores</button>
+            </section>
+            <section class="col text-right">
+                <p class="timer">Time: <span id="timer-number">60</span></p>
             </section>
         </section>
-        <section class="quiz-finish-page">
-            <h2>Quiz Finished!</h2>
-            <p>
+    </section>
+
+    <main class="container">
+
+        <section class="d-flex justify-content-center landing-page">
+            <section class="d-flex flex-column">
+                <h1 class="d-flex flex-column quiz-title text-center">Coding Quiz Challenge</h1>
+                <p class="d-flex flex-column text-center">
+                    Try to get a high score on the quiz by correctly answering as many programming questions as possible within the 60 second time limit.<br/>Any incorrect guesses will take 10 seconds off your current remaining time.
+                </p>
+                <section class="d-block text-center">
+                    <button class="btn start-quiz-btn">
+                        Start Quiz
+                    </button>
+                </section>
+            </section>
+        </section>
+
+
+        <section class="d-none quiz-page">
+            <h2 class="text-center question">
+                Example Question Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </h2>
+            <section class="d-flex justify-content-center">
+                <form class="d-flex flex-column input-group" id="answers" action="">
+                    <button id="answer-1-btn" class="btn answer-btn">
+                    1: <span id="answer-1">Answer1</span>
+                    </button>
+                    <button id="answer-2-btn"class="btn answer-btn">
+                        2: <span id="answer-2">Answer2</span>
+                    </button>
+                    <button id="answer-3-btn"class="btn answer-btn">
+                        3: <span id="answer-3">Answer3</span>
+                    </button>
+                    <button id="answer-4-btn" class="btn answer-btn">
+                        4: <span id="answer-4">Answer4</span>
+                    </button>
+                </form>
+            </section>
+        </section>
+
+        <section class="d-none answer-result">
+            <hr class="text-secondary"/>
+            <h4 class="answer-correct text-success">Correct!</h4>
+            <h4 class="answer-incorrect text-danger">Incorrect!</h4>
+        </section>
+
+        <section class="d-none flex-column quiz-finish-page">
+            <h2 class="text-center">Quiz Finished!</h2>
+            <h5 class="text-center">
               Final Score: <span id="score">0</span>
-            </p>
-            <input type="text" name="initials" id="initials-input"/>
-            <input type="submit" name="initials-submit" value="Submit" id="initials-submit"/>
+            </h5>
+            <form class="d-block input-group text-center" action="">
+                <label for="initials-input">Input your initials:</label>
+                <input class="text-center input-group-text d-inline" type="text" name="initials" id="initials-input"/>
+                <button type="submit" id="initials-submit" class="btn">Submit</button>
+            </form>
+        </section>
 
 
+        <section class="d-none flex-column text-center high-score-page">
+            <h2 class="d-flex flex-column text-center">High Scores</h2>
+            <section class="flex-column high-scores">
+                <section class="high-score badge badge-secondary">
+                    <h6 class="high-score-text">AGC: 25</h6>
+                </section>
+            </section>
+
+            <section class="d-block">
+                <button class="btn back-btn">Go Back</button>
+                <button class="btn clear-btn">Clear High Scores</button>
+            </section>
         </section>
-        <section class="high-score-page">
-            <h2>High Scores</h2>
-            <ul class="high-scores">
-                <li class="high-score">AGC: 25</li>
-            </ul>
-            <button>Go Back</button>
-            <button>Clear High Scores</button>
-        </section>
+
+
+
     </main>
-    <footer class="container">
-
-    </footer>
     <script src="./assets/index.js"></script>
 </body>
 </html>

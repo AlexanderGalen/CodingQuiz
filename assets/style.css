@@ -1,0 +1,71 @@
+/* element selectors */
+html {
+
+}
+
+body {
+
+}
+
+ul {
+
+}
+
+li {
+    /* list-style: none; */
+}
+
+/* class selectors */
+
+.top-bar {
+    margin-top: 20px;
+    height: 80px;
+}
+
+.high-score-page {
+    position: relative;
+    top: 100px;
+}
+
+.high-score {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.high-score-text {
+    margin-bottom: 2px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.answer-btn {
+    margin-bottom: 20px;
+}
+
+#initials-input {
+    margin-right: 20px;
+    position:relative;
+    top:3px;
+}
+
+/* quiz page css */
+.quiz-page {
+    /* display:none; */
+}
+
+.start-quiz-btn {
+    /* width: 100px; */
+}
+
+/* post-quiz page css */
+.quiz-finish-page {
+    /* display:none; */
+}
+
+/* high score page css */
+.high-score-page {
+    /* display:none; */
+}
+
