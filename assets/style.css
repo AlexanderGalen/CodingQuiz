@@ -1,20 +1,3 @@
-/* element selectors */
-html {
-
-}
-
-body {
-
-}
-
-ul {
-
-}
-
-li {
-    /* list-style: none; */
-}
-
 /* class selectors */
 
 .top-bar {
@@ -44,28 +27,10 @@ li {
     margin-bottom: 20px;
 }
 
+/* id selectors */
+
 #initials-input {
     margin-right: 20px;
     position:relative;
     top:3px;
 }
-
-/* quiz page css */
-.quiz-page {
-    /* display:none; */
-}
-
-.start-quiz-btn {
-    /* width: 100px; */
-}
-
-/* post-quiz page css */
-.quiz-finish-page {
-    /* display:none; */
-}
-
-/* high score page css */
-.high-score-page {
-    /* display:none; */
-}
-
